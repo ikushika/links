@@ -102,6 +102,12 @@
   .btn.job .sub{color:rgba(42,31,9,.66)}
   .btn.job:hover{background:#E5B420;border-color:#E5B420}
 
+  /* 公式HP：ブランドの入口（朱を薄く効かせた中間トーン） */
+  .btn.brand{background:linear-gradient(180deg,rgba(209,74,50,.20),rgba(209,74,50,.12));
+    border-color:rgba(209,74,50,.5);
+    -webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px)}
+  .btn.brand:hover{border-color:rgba(209,74,50,.75)}
+
   /* URL未設定 */
   .btn.todo{opacity:.45;pointer-events:none;background:transparent;
     box-shadow:none;border-style:dashed;-webkit-backdrop-filter:none;backdrop-filter:none}
@@ -174,7 +180,7 @@
    primary:true で朱色の目立つボタンに。
    ========================================================= */
 const TOP_LINKS = [
-  { label:{ja:"公式ホームページ",en:"Official Website"}, sub:{ja:"ブランドについて",en:"About us"}, icon:"home", url:"https://ikushika.com" },
+  { label:{ja:"公式ホームページ",en:"Official Website"}, sub:{ja:"ブランドについて",en:"About us"}, icon:"home", variant:"brand", url:"https://ikushika.com" },
 ];
 
 const CONFIG = [
